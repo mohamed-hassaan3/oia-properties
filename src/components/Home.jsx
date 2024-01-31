@@ -28,7 +28,7 @@ const Home = () => {
           </div>
         </aside>
       </article>
-        <Form className="absolute right-1/2 translate-x-1/2 my-6 xl:my-0 xl:right-[12%] xl:translate-x-0 xl:bottom-0 xl:w-[25%] md:w-1/2 w-[90%]">
+        <Form className="-bottom-[450px] absolute right-1/2 translate-x-1/2 my-6 xl:my-0 xl:right-[12%] xl:translate-x-0 xl:bottom-0 xl:w-[25%] md:w-1/2 w-[90%]">
           <h1 className='text-2xl font-bold text-secondary tracking-wider mb-4'>PROJECT BROCHURE</h1>
         </Form>
     </section>
