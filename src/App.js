@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
@@ -12,7 +12,24 @@ import Download from "./components/Download";
 import Footer from "./components/Footer";
 
 function App() {
+  const navRef = useRef();
+  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const closingMenu = (e) => {
+      if (isOpen && navRef.current && !navRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousemove", closingMenu);
+
+    return () => {
+      document.removeEventListener("mousemove", closingMenu);
+    };
+  }, [isOpen]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -26,9 +43,19 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   });
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
   return (
-    <div>
-      <Header isScrolled={isScrolled} />
+    <div className=" overflow-x-hidden w-full" ref={navRef}>
+      <Header isScrolled={isScrolled} isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="mb-[400px] xl:mb-0  h-screen">
         <Home home="home" />
       </div>

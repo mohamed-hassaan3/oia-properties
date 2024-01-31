@@ -21,3 +21,9 @@ html {
         color: #313F38;
     }
 }
+.toggle {
+    display: none;
+  }
+  .no-scroll {
+    overflow: hidden;
+  }

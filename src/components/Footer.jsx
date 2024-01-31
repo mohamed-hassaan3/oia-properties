@@ -3,7 +3,7 @@ import ALDAR from '../assets/aldar.webp'
 
 const Footer = () => {
     return (
-        <footer className='bg-primary py-20 px-6 flex justify-around'>
+        <footer className='bg-primary py-20 px-6 flex justify-around flex-wrap gap-10'>
             <section>
                 <img src={ALDAR} alt="aldar" className='w-[200px] rounded-full mb-10 m-auto' />
                 <a href='mailto:mmhassaan3@gmail.com' className='my-4' >

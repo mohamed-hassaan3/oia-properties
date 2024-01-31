@@ -3,7 +3,7 @@ import MASTER from '../assets/master.webp'
 const Location = () => {
   const newLocal = '_blank'
   return (
-    <section id='location' className='md:py-20 w-[80%] m-auto'>
+    <section id='location' className='md:py-20 md:w-[80%] m-auto'>
       <aside>
         <article className='flex lg:flex-row flex-col lg:gap-20 gap-10 w-full mb-12'>
           <h1 className='lg:w-[35%] lg:text-6xl text-4xl font-semibold text-primary'>Location</h1>
