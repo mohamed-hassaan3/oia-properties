@@ -5,6 +5,7 @@
 html {
     scroll-behavior: smooth;
     background-color: #FFFCF6;
+    overflow-x: hidden;
 }
 
 @layer components {
@@ -27,3 +28,4 @@ html {
   .no-scroll {
     overflow: hidden;
   }
+ 
