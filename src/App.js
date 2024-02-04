@@ -56,7 +56,7 @@ function App() {
   return (
     <div className=" overflow-x-hidden w-full" ref={navRef}>
       <Header isScrolled={isScrolled} isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className="lg:mb-[400px] xl:mb-0  h-screen">
+      <div className="mb-[400px] xl:mb-0  h-screen">
         <Home home="home" />
       </div>
       <Gallery />

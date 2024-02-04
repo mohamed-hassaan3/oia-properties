@@ -15,7 +15,7 @@ const Header = ({ isScrolled, isOpen, setIsOpen }) => {
     };
 
     return (
-        <div className={`${isScrolled && "bg-primary text-secondary shadow-lg px-6"} px-2 flex justify-between items-center py-6 w-full lg:home-layout rounded-xl fixed -translate-x-1/2 left-1/2 top-2 opacity-90 transition-all duration-700 z-10`}>
+        <div className={`${isScrolled && "bg-primary text-secondary shadow-lg px-6"} px-2 flex justify-between items-center py-2 md:py-6 w-full lg:home-layout rounded-xl fixed -translate-x-1/2 left-1/2 top-2 opacity-90 transition-all duration-700 z-10`}>
             <a onClick={toggleMenu} href='#home' className='md:text-2xl font-semibold tracking-wide text-nowrap'>Saadiyat Lagoons</a>
             <nav>
                 <ul
