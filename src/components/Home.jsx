@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import Form from './Form'
 import Hero from '../assets/gallery/ex1.webp'
 import {gsap} from 'gsap';

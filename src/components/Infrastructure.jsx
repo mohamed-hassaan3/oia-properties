@@ -9,7 +9,6 @@ const Infrastructure = () => {
       duration: .5,
       y: "100%"
     })
-   
     tween.play()
   }
   const handleSelect = (item) => {
