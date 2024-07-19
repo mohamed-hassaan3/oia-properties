@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <section
     ref={containerRef}
-      id="home">
+      id="home" className='relative'>
       <div ref={imgRef} className=' introImg bg-no-repeat bg-center bg-cover object-cover lg:w-[80%] h-[600px] w-full m-auto mt-[70px] md:mt-[100px] brightness-50 relative rounded-xl'
         style={{ backgroundImage: `url(${Hero})` }}></div>
       <article className=' *:text-secondary'>
@@ -51,7 +51,7 @@ const Home = () => {
           </div>
         </aside>
       </article>
-      <Form className="intro -bottom-[450px] absolute right-1/2 translate-x-1/2 my-6 xl:my-0 xl:right-[12%] xl:translate-x-0 xl:bottom-0 xl:w-[25%] md:w-1/2 w-[90%]">
+      <Form className="intro absolute hidden xl:block translate-x-1/2 my-6 xl:my-0 xl:right-[12%] xl:translate-x-0 top-[15%]  xl:w-[25%] md:w-1/2 w-[90%]">
         <h1 className='text-2xl font-bold text-secondary tracking-wider mb-4'>PROJECT BROCHURE</h1>
       </Form>
     </section>
