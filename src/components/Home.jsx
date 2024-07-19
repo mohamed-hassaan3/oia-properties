@@ -8,7 +8,7 @@ const Home = () => {
  const containerRef = useRef();
  const imgRef = useRef()
 
-  useGSAP(() => {
+  /*u seGSAP(() => {
     gsap.from('.intro', {
       opacity: 0,
       y: '-100%',
@@ -24,7 +24,7 @@ const Home = () => {
       opacity: 1,
     })
   }, {scope: [containerRef, imgRef]})
- 
+  */
   return (
     <section
     ref={containerRef}
